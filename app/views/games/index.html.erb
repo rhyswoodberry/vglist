@@ -1,0 +1,9 @@
+<h1>Rhys' Top Video Games</h1>
+
+<ul>
+<% @games.each do |game| %>
+  <li>
+    <strong><%= game.title %></strong> (<%= game.rating %>): <%= number_to_currency(game.total_gross) %>
+  </li>
+<% end %>
+</ul>
